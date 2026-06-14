@@ -6,13 +6,8 @@ menu-bar dashboard for your fleet of AI coding agents.
 ## Install
 
 ```sh
-brew install --cask bobby-oster/openflock/openflock
-```
-
-or, equivalently:
-
-```sh
 brew tap bobby-oster/openflock
+brew trust bobby-oster/openflock   # Homebrew 6+ requires trusting third-party taps
 brew install --cask openflock
 ```
 
