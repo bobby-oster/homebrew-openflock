@@ -17,10 +17,10 @@ cask "openflock" do
   app "OpenFlock.app"
 
   caveats <<~EOS
-    OpenFlock is ad-hoc signed, not yet notarized. If macOS blocks the first
-    launch, either reinstall without quarantine:
+    OpenFlock is ad-hoc signed and not yet notarized, so macOS Gatekeeper blocks
+    the first launch. After installing, clear the quarantine flag:
 
-      brew install --cask --no-quarantine openflock
+      xattr -dr com.apple.quarantine /Applications/OpenFlock.app
 
     or open it once via System Settings → Privacy & Security → "Open Anyway".
   EOS

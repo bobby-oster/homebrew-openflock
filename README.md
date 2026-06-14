@@ -13,14 +13,17 @@ brew install --cask openflock
 
 ## First launch
 
-OpenFlock is ad-hoc signed but not yet notarized, so macOS may block the first
-launch. Either install without quarantine:
+OpenFlock is ad-hoc signed but not yet notarized, so macOS Gatekeeper blocks the
+first launch. After installing, clear the quarantine flag:
 
 ```sh
-brew install --cask --no-quarantine openflock
+xattr -dr com.apple.quarantine /Applications/OpenFlock.app
 ```
 
 or open it once via **System Settings → Privacy & Security → "Open Anyway"**.
+
+> Homebrew's old `--no-quarantine` flag was removed in Homebrew 5.0 and no longer
+> works.
 
 ## Uninstall
 
