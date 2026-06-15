@@ -1,6 +1,6 @@
 cask "openflock" do
-  version "0.1.0"
-  sha256 "47c96d28b9fdbb8d90ca091aff1b3d36497c4a442e2f6cb3e73062dbcbf337b0"
+  version "0.2.0"
+  sha256 "a3da4f56db502a084a1b816df107fa1266964e84418f612202f32bcf9c5df4ad"
 
   url "https://github.com/bobby-oster/openflock/releases/download/v#{version}/OpenFlock-#{version}.zip"
   name "OpenFlock"
